@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+
+  <!-- Registration Form -->
+  <form id="userForm">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" required>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="phone">Phone No</label>
+    <input type="tel" name="phone" id="phone" required>
+
+    <!-- Hidden fields for edit mode -->
+    <input type="hidden" id="userId" name="userId" value="">
+    <input type="hidden" id="editMode" name="editMode" value="false">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- User List -->
+  <ul id="userList" style="list-style: none; padding: 0;"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+  <script src="custom.js"></script>  
+</body> 
+</html>
